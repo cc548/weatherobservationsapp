@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Observations Web</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="logic.js"></script>
+</head>
+<body>
+    <h1>Weather Observations Web</h1>
+    <table>
+        <tr>
+            <td>Date</td>
+            <td>
+                <input type="date" id="date">
+            </td>
+        </tr>
+        <tr>
+            <td>Minimum temperate (℃)</td>
+            <td><input type="text" id="minTemp"></td>
+        </tr>
+        <tr>
+            <td>Maximum temperature (℃)</td>
+            <td><input type="text" id="maxTemp"></td>
+        </tr>
+        <tr>
+            <td>Conditions</td>
+            <td>
+                <select id="condition">
+                    <option id="sunny" value="sunny">Sunny</option>
+                    <option id="cloudy" value="cloudy">Cloudy</option>
+                    <option id="showers" value="showers">Showers</option>
+                    <option id="thunderstorms" value="thunderstorms">Thunderstorms</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="Submit" onclick="userDidClickCreate()">
+            </td>
+        </tr>
+    </table>
+    <hr/>
+
+    <hr/>
+    <table id="weatherConditionsTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Minimum Temperature (℃)</th>
+                <th>Maximum temperature (℃)</th>
+                <th>Condition</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyForDays"></tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    font-family: "Comic Sans MS";
+}
+
+#weatherConditionsTable {
+    border-collapse: collapse;
+
+}
+
+#weatherConditionsTable td th{
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+#weatherConditionsTable th{
+    background-color: rgb(222, 222, 222);
+}
+
+.contents {
+    color: gray;
+    vertical-align: middle;
+    text-align: center;
+}
